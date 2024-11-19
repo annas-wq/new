@@ -28,7 +28,7 @@ page = st_navbar(pages, styles=styles)
 
 if page == 'Home':
     Home.Home().app()
-elif page == "Projectz1":
+elif page == "Project1":
     Project1.Project1().app()
 elif page == "Project2":
     Project2.Project2().app()
