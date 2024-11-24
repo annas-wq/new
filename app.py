@@ -4,7 +4,6 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
-from streamlit_navigation_bar.example import logo_path
 
 image = Image.open('img/genetic-algorithm-svgrepo-com.png')
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
