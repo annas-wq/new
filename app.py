@@ -12,7 +12,7 @@ from Pages import Home, Project1, Project2, Project3
 from streamlit_navigation_bar import st_navbar as navbar
 pages = ["Home", "Project1", "Project2", "Project3"]
 
-logo_path = os.path.join(os.path.dirname(__file__), "img", "genetic-algorithm-svgrepo-com.svg")
+logo_path = os.path.join(os.path.dirname(__file__), "img", "genetic-algorithm-svgrepo-com.png")
 pages = [" ", 'Home', 'Project1', 'Project2', 'Project3']
 
 styles = {
