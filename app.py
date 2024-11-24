@@ -9,13 +9,12 @@ image = Image.open('img/genetic-algorithm-svgrepo-com.png')
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 import streamlit as st
 from Pages import Home, Project1, Project2, Project3
-from streamlit_navigation_bar import st_navbar
+from streamlit_navigation_bar import st_navbar as navbar
 pages = ["Home", "Project1", "Project2", "Project3"]
 
 logo_path = os.path.join(os.path.dirname(__file__), "img", "genetic-algorithm-svgrepo-com.svg")
 pages = [" ", 'Home', 'Project1', 'Project2', 'Project3']
 
-page = st_navbar(pages, styles=styles, logo_path=logo_path, options=options)
 styles = {
     "nav": {
         "background-color": "rgb(123, 209, 146)"
@@ -44,7 +43,7 @@ styles = {
         "height": "40px",
     }
 }
-page = st_navbar(pages, styles=styles)
+page = navbar(pages, styles=styles)
 
 if page == 'Home':
     Home.Home().app()
